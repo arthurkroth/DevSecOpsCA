@@ -4,4 +4,6 @@ sudo npm install -g pm2
 pm2  stop simple_app
 cd DevSecOpsCA/
 npm install
+echo $PRIVATE_KEY > privatekey.pem
+echo $SERVER > server.crt
 pm2 start app.js --name simple_app
